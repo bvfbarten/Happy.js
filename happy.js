@@ -55,7 +55,7 @@
             var errorEl = $(error.id).length > 0 ? $(error.id) : getError(error);
             var handleBlur = function handleBlur() {
                 if (!pauseMessages) {
-                    field.testValid();
+                    field.testValid(true);
                 } else {
                     $(window).one('mouseup', field.testValid);
                 }
